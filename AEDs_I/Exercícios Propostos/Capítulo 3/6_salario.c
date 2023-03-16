@@ -6,10 +6,11 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() 
 {
-    // system("clear");
+    system("clear");
 
     float salarioFixo, vendas, comissao, salarioFinal;
 

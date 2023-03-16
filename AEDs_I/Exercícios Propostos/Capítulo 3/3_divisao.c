@@ -14,8 +14,7 @@ int main ()
     system ("clear || cls");
 
 
-    int a, b;
-    float divisao;
+    int a, b, divisao;
 
     printf ("Digite o valor do primeiro número: ");
     scanf ("%i", &a);
@@ -25,7 +24,7 @@ int main ()
     
     divisao = a/b;
 
-    printf ("\nResultado: %f \n\n\n", divisao);
+    printf ("\nResultado: %d \n\n\n", divisao);
 
 
 
