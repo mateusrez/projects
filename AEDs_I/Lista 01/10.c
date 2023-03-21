@@ -39,15 +39,15 @@ int main()
     }
     else if (velocidadeMotorista <= velocidadeMaxima + 10)
         {
-            printf("50 reais");
+            printf("Multa de 50 reais");
         }
         else if (velocidadeMotorista <= velocidadeMaxima + 30)
             {
-                printf("100 reais");
+                printf("Multa de 100 reais");
             }
             else
             {
-                printf("200 reais");
+                printf("Multa de 200 reais");
             }
     
     /* alternativa

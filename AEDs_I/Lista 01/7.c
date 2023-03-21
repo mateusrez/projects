@@ -64,7 +64,7 @@ int main ()
     */
 
     // Saída de dados
-    printf ("O valor de y é %f", y);
+    printf ("%.2f", y);
 
     return 0; // Fim do programa
 }

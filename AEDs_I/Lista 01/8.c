@@ -26,11 +26,11 @@ int main()
     char opcao;
 
     // Entrada de dados
-    // printf("Digite o valor do salário atual: ");
-    scanf ("%f", &salario_atual);
-
     // printf("Digite a opção: ");
     scanf (" %c", &opcao);
+
+    // printf("Digite o valor do salário atual: ");
+    scanf ("%f", &salario_atual);
 
     // Processamento de dados
 
@@ -63,7 +63,7 @@ int main()
     }
 
     // Saída de dados
-    printf ("O novo salário é R$%.2f", novo_salario);
+    printf ("%.2f", novo_salario);
 
 
     return 0; // Fim do programa

@@ -12,6 +12,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 int main ()
 {
@@ -25,13 +26,13 @@ int main ()
     // printf ("Digite o ano de nascimento: ");
     scanf ("%i", &ano_nascimento);
 
-    // printf("Digite o ano atual: ");
-    scanf ("%i", &ano_atual);
-
     // printf ("Você já fez aniversário este ano? (S/N): ");
     scanf (" %c", &fez_aniversario);
+    fez_aniversario = toupper (fez_aniversario);
 
     // Processamento de dados
+    ano_atual = 2023;
+
     if (fez_aniversario == 'S')
     {
         idade = ano_atual - ano_nascimento;
@@ -40,18 +41,17 @@ int main ()
     {
         idade = ano_atual - ano_nascimento - 1;
     }
+    
+    printf ("%i \n", idade);
 
-    if (idade >= 18)
+    if (idade > 18)
     {
-        printf ("Você já pode tirar a CNH \n");
+        printf ("Pode dirigir");
     }
     else
     {
-        printf ("Você ainda não pode tirar a CNH \n");
+        printf ("Não pode dirigir");
     }
-
-    // Saída de dados
-    printf ("Sua idade é %i", idade);
 
     return 0; // Fim do programa
 }

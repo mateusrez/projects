@@ -27,7 +27,7 @@ int main ()
     raiz = -b / a; // ax + b = 0 => x = -b / a
 
     // Saída de dados
-    printf ("A raiz da equação é %f", raiz);
+    printf ("%.2f", raiz);
 
     return 0; // Fim do programa
 }
